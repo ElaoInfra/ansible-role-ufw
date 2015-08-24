@@ -1,0 +1,9 @@
+---
+
+- name: config > Template
+  template:
+    src:  "{{ elao_ufw_config_template|ternary(elao_ufw_config_template, 'config/base.j2') }}"
+    dest: "{{ elao_ufw_config_file }}"
+  when: (elao_ufw_config_template is not none) or (elao_ufw_config|length)
+  notify:
+    - ufw restart

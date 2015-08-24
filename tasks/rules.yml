@@ -1,0 +1,11 @@
+---
+
+- name: rules > Rules
+  ufw:
+    interface: "{{ item.interface|default(omit) }}"
+    rule:      "{{ item.rule|default(omit) }}"
+    direction: "{{ item.direction|default(omit) }}"
+    proto:     "{{ item.proto|default(omit) }}"
+    port:      "{{ item.port|default(omit) }}"
+    policy:    "{{ item.policy|default(omit) }}"
+  with_items: elao_ufw_rules
