@@ -1,0 +1,5 @@
+---
+
+- name: logging > Logging
+  ufw:
+    state: "{{ elao_ufw_logging }}"

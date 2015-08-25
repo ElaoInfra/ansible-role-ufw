@@ -8,5 +8,8 @@ elao_ufw_config:          []
 # State
 elao_ufw_state: disabled
 
+# Logging
+elao_ufw_logging: low
+
 # Rules
 elao_ufw_rules: []

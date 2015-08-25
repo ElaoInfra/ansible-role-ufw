@@ -3,5 +3,6 @@
 - include: install.yml
 - include: config.yml
 - include: state.yml
+- include: logging.yml
 - include: rules.yml
 - include: services.yml
