@@ -2,7 +2,7 @@
 
 - include: install.yml
 - include: config.yml
-- include: state.yml
 - include: logging.yml
+- include: state.yml
 - include: rules.yml
 - include: services.yml
